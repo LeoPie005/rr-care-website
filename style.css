@@ -85,11 +85,12 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 0.4rem;
 }
-.nav__dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
+.rose-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
   flex-shrink: 0;
+  display: block;
 }
 .nav__links {
   display: flex;
@@ -579,7 +580,7 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 0.4rem;
 }
-.footer__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.footer .rose-icon { color: var(--accent); }
 .footer__tagline { font-size: 0.875rem; line-height: 1.7; max-width: 28ch; }
 .footer__hd {
   font-size: 0.7rem;
