@@ -24,7 +24,7 @@
           <a href="contact.html" class="nav__link">Contact</a>
           <a href="tel:+17137055484" class="nav__phone">(713) 705-5484</a>
         </div>
-        <button class="nav__toggle" id="menuBtn" aria-label="Open menu">
+        <button class="nav__toggle" id="menuBtn" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -54,7 +54,7 @@
     <section class="section">
       <div class="container">
         <div class="founder-grid">
-          <div>
+          <div data-reveal>
             <p class="founder-label">Our founder</p>
             <h2 class="founder-h2">A gap in the system.<br/>We decided to close it.</h2>
             <div class="founder-body">
@@ -63,7 +63,7 @@
               <p>Based in El Lago, TX and rooted in the Greater Houston community, we know the local landscape: the facilities, the home care agencies, the hospice providers. When you call us, you're talking to someone who knows your area and has relationships in it.</p>
             </div>
           </div>
-          <div class="founder-img">
+          <div class="founder-img" data-reveal data-delay="1">
             <p>Founder photo<br/>coming soon</p>
           </div>
         </div>
@@ -74,27 +74,27 @@
 
     <section class="section">
       <div class="container">
-        <div class="values-hdr">
+        <div class="values-hdr" data-reveal>
           <h2>What makes us different</h2>
           <span class="small muted">Four commitments to every family</span>
         </div>
         <div class="values-grid">
-          <div class="val-item">
+          <div class="val-item" data-reveal data-delay="1">
             <p class="val-item__num">01</p>
             <h3 class="val-item__title">Deep Local Knowledge</h3>
             <p class="val-item__desc">We know the Houston Bay Area care landscape — the good facilities, the gaps, the agencies worth trusting. That local insight is something no national directory can replicate.</p>
           </div>
-          <div class="val-item">
+          <div class="val-item" data-reveal data-delay="2">
             <p class="val-item__num">02</p>
             <h3 class="val-item__title">Objective Assessments</h3>
             <p class="val-item__desc">We don't earn referral commissions. Our recommendations are based on your loved one's actual needs, not on which facility pays us more.</p>
           </div>
-          <div class="val-item">
+          <div class="val-item" data-reveal data-delay="1">
             <p class="val-item__num">03</p>
             <h3 class="val-item__title">Direct Communication</h3>
             <p class="val-item__desc">You get straight answers — not jargon, not a sales pitch. We explain your options clearly so you can make the decision that's right for your family.</p>
           </div>
-          <div class="val-item">
+          <div class="val-item" data-reveal data-delay="2">
             <p class="val-item__num">04</p>
             <h3 class="val-item__title">Strict Compliance</h3>
             <p class="val-item__desc">We operate within all state and federal care regulations, and we help families understand their rights and the standards that facilities are held to.</p>
@@ -103,7 +103,7 @@
       </div>
     </section>
 
-    <div class="cta-dark">
+    <div class="cta-dark" data-reveal>
       <div class="container">
         <div class="cta-dark__inner">
           <div>
@@ -117,7 +117,7 @@
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-reveal>
     <div class="container">
       <div class="footer__grid">
         <div>
@@ -143,17 +143,12 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p>&copy; <span id="year"></span> RR Care. All rights reserved.</p>
+        <p>&copy; <span data-year></span> RR Care. All rights reserved.</p>
         <p>Houston &middot; Clear Lake &middot; Friendswood &middot; League City</p>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('menuBtn').addEventListener('click', function () {
-      document.getElementById('mobileMenu').classList.toggle('open');
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
